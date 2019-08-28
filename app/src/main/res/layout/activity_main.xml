@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtCelcius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Celcius"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="35dp"/>
+
+    <EditText
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etxCelcius"
+        app:layout_constraintLeft_toRightOf="@id/txtKelvin"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="42dp"/>
+
+    <Button
+        android:id="@+id/btnKonversi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Konversi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:id="@+id/txtKelvin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kelvin"
+        app:layout_constraintTop_toTopOf="@id/btnKonversi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="77dp"
+        android:layout_marginLeft="35dp"/>
+
+    <EditText
+        android:id="@+id/etxKelvin"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/btnKonversi"
+        app:layout_constraintLeft_toRightOf="@id/txtKelvin"
+        android:layout_marginTop="56dp"
+        android:layout_marginLeft="42dp"/>
+
+    <TextView
+        android:id="@+id/txtFahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtKelvin"
+        android:text="Fahrenheit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="21dp"/>
+
+    <EditText
+        android:id="@+id/etxFahrenheit"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtKelvin"
+        app:layout_constraintLeft_toRightOf="@id/txtKelvin"
+        android:layout_marginLeft="42dp"/>
+
+    <TextView
+        android:id="@+id/txtReamur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reamur"
+        app:layout_constraintTop_toBottomOf="@id/txtFahrenheit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="35dp"/>
+
+    <EditText
+        android:id="@+id/etxReamur"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etxFahrenheit"
+        app:layout_constraintLeft_toRightOf="@id/txtKelvin"
+        android:layout_marginLeft="42dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
